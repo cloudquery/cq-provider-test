@@ -56,6 +56,12 @@ func Provider() *provider.Provider {
 					return fmt.Errorf("error from provider")
 				},
 			},
+			"panic_resource": {
+				Name: "panic_resource",
+				Resolver: func(ctx context.Context, meta schema.ClientMeta, parent *schema.Resource, res chan interface{}) error {
+					panic("resource with panic")
+				},
+			},
 		},
 		Config: func() provider.Config {
 			return &client.Configuration{}
