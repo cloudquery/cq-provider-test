@@ -12,11 +12,10 @@ func (c Configuration) Example() string {
 	return `
   configuration {
     account "1" {
+      id = "testid"
       regions = ["asdas"]
       resources = ["ab", "c"]
     }
-
-    regions = ["adsa"]
   }`
 }
 
