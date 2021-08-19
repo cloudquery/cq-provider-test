@@ -2,6 +2,7 @@ package resources
 
 import (
 	"context"
+	"embed"
 	"fmt"
 	"time"
 
@@ -12,10 +13,14 @@ import (
 	"github.com/hashicorp/go-hclog"
 )
 
+//go:embed migrations
+var migrations embed.FS
+
 func Provider() *provider.Provider {
 	return &provider.Provider{
-		Name:    "test",
-		Version: "v0.0.4",
+		Name:       "test",
+		Version:    "v0.0.5",
+		Migrations: migrations,
 		Configure: func(logger hclog.Logger, i interface{}) (schema.ClientMeta, error) {
 			return &client.TestClient{L: logger}, nil
 		},
@@ -60,6 +65,18 @@ func Provider() *provider.Provider {
 				Name: "panic_resource",
 				Resolver: func(ctx context.Context, meta schema.ClientMeta, parent *schema.Resource, res chan interface{}) error {
 					panic("resource with panic")
+				},
+			},
+			"migrate_resource": {
+				Name: "migrate_resource",
+				Resolver: func(ctx context.Context, meta schema.ClientMeta, parent *schema.Resource, res chan interface{}) error {
+					return nil
+				},
+				Columns: []schema.Column{
+					{
+						Name: "upgrade_column",
+						Type: schema.TypeInt,
+					},
 				},
 			},
 		},
