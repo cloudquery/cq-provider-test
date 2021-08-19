@@ -77,6 +77,10 @@ func Provider() *provider.Provider {
 						Name: "upgrade_column",
 						Type: schema.TypeInt,
 					},
+					{
+						Name: "upgrade_column_2",
+						Type: schema.TypeInt,
+					},
 				},
 			},
 		},
