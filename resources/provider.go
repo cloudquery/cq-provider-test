@@ -19,7 +19,7 @@ var migrations embed.FS
 func Provider() *provider.Provider {
 	return &provider.Provider{
 		Name:       "test",
-		Version:    "v0.0.10",
+		Version:    "v0.0.11",
 		Migrations: migrations,
 		Configure: func(logger hclog.Logger, i interface{}) (schema.ClientMeta, error) {
 			return &client.TestClient{L: logger}, nil
@@ -78,7 +78,7 @@ func Provider() *provider.Provider {
 						Type: schema.TypeInt,
 					},
 					{
-						Name: "upgrade_column_2",
+						Name: "upgrade_column_3",
 						Type: schema.TypeInt,
 					},
 				},
