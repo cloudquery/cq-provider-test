@@ -6,20 +6,20 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cloudquery/cq-provider-template/client"
+	"github.com/cloudquery/cq-provider-test/client"
 
 	"github.com/cloudquery/cq-provider-sdk/provider"
 	"github.com/cloudquery/cq-provider-sdk/provider/schema"
 	"github.com/hashicorp/go-hclog"
 )
 
-//go:embed migrations
+//go:embed migrations/*/*.sql
 var migrations embed.FS
 
 func Provider() *provider.Provider {
 	return &provider.Provider{
 		Name:       "test",
-		Version:    "v0.0.6",
+		Version:    "v0.0.10",
 		Migrations: migrations,
 		Configure: func(logger hclog.Logger, i interface{}) (schema.ClientMeta, error) {
 			return &client.TestClient{L: logger}, nil

@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/cloudquery/cq-provider-sdk/serve"
-	"github.com/cloudquery/cq-provider-template/resources"
+	"github.com/cloudquery/cq-provider-test/resources"
 )
 
 func main() {
