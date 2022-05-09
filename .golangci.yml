@@ -1,9 +1,11 @@
+# DONT EDIT. This file is synced from https://github.com/cloudquery/.github/.github
 run:
   tests: true
   skip-dirs:
     - bin
     - docs
     - client/mocks
+    - resources/forks
   timeout: 3m
   build-tags:
     - all
