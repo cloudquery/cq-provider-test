@@ -6,10 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cloudquery/cq-provider-test/client"
-
 	"github.com/cloudquery/cq-provider-sdk/provider"
 	"github.com/cloudquery/cq-provider-sdk/provider/schema"
+	"github.com/cloudquery/cq-provider-test/client"
 	"github.com/hashicorp/go-hclog"
 )
 

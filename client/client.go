@@ -8,17 +8,6 @@ type Configuration struct {
 	Accounts []Account `hcl:"account,block"`
 }
 
-func (c Configuration) Example() string {
-	return `
-  configuration {
-    account "1" {
-      id = "testid"
-      regions = ["asdas"]
-      resources = ["ab", "c"]
-    }
-  }`
-}
-
 type Account struct {
 	Name      string   `hcl:"name,label"`
 	Id        string   `hcl:"id"`
@@ -32,4 +21,15 @@ type TestClient struct {
 
 func (t TestClient) Logger() hclog.Logger {
 	return t.L
+}
+
+func (Configuration) Example() string {
+	return `
+  configuration {
+    account "1" {
+      id = "testid"
+      regions = ["asdas"]
+      resources = ["ab", "c"]
+    }
+  }`
 }
