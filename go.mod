@@ -3,7 +3,7 @@ module github.com/cloudquery/cq-provider-test
 go 1.17
 
 require (
-	github.com/cloudquery/cq-provider-sdk v0.7.0-alpha.0.20220119154925-739f3acc9e08
+	github.com/cloudquery/cq-provider-sdk v0.9.5
 	github.com/hashicorp/go-hclog v1.0.0
 )
 
@@ -48,6 +48,7 @@ require (
 	github.com/mitchellh/hashstructure v1.1.0 // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/oklog/run v1.1.0 // indirect
+	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/spf13/afero v1.6.0 // indirect
