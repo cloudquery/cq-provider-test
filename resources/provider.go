@@ -2,25 +2,21 @@ package resources
 
 import (
 	"context"
-	"embed"
 	"fmt"
 	"time"
 
 	"github.com/cloudquery/cq-provider-sdk/provider"
+	"github.com/cloudquery/cq-provider-sdk/provider/diag"
 	"github.com/cloudquery/cq-provider-sdk/provider/schema"
 	"github.com/cloudquery/cq-provider-test/client"
 	"github.com/hashicorp/go-hclog"
 )
 
-//go:embed migrations/*/*.sql
-var migrations embed.FS
-
 func Provider() *provider.Provider {
 	return &provider.Provider{
-		Name:       "test",
-		Version:    "v0.0.11",
-		Migrations: migrations,
-		Configure: func(logger hclog.Logger, i interface{}) (schema.ClientMeta, error) {
+		Name:    "test",
+		Version: "v0.0.11",
+		Configure: func(logger hclog.Logger, i interface{}) (schema.ClientMeta, diag.Diagnostics) {
 			return &client.TestClient{L: logger}, nil
 		},
 		ResourceMap: map[string]*schema.Table{
