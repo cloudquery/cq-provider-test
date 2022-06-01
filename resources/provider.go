@@ -53,7 +53,7 @@ func Provider() *provider.Provider {
 			"error_resource": {
 				Name: "error_resource",
 				Resolver: func(ctx context.Context, meta schema.ClientMeta, parent *schema.Resource, res chan<- interface{}) error {
-					return fmt.Errorf("error from provider")
+					return diag.WrapError(fmt.Errorf("error from provider"))
 				},
 			},
 			"panic_resource": {
