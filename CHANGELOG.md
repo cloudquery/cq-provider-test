@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.4](https://github.com/cloudquery/cq-provider-test/compare/v0.1.3...v0.1.4) (2022-06-02)
+
+
+### Bug Fixes
+
+* **deps:** Update module github.com/cloudquery/cq-provider-sdk to v0.10.7 ([#59](https://github.com/cloudquery/cq-provider-test/issues/59)) ([75cd4a6](https://github.com/cloudquery/cq-provider-test/commit/75cd4a63815096aad4c995959343d47dd146119b))
+* Wrap provider error ([#56](https://github.com/cloudquery/cq-provider-test/issues/56)) ([739170f](https://github.com/cloudquery/cq-provider-test/commit/739170ff8c5340216622aed66cbef498fa6b0044))
+
 ### [0.1.3](https://github.com/cloudquery/cq-provider-test/compare/v0.1.2...v0.1.3) (2022-06-01)
 
 
