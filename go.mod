@@ -5,6 +5,7 @@ go 1.17
 require (
 	github.com/cloudquery/cq-provider-sdk v0.11.4
 	github.com/hashicorp/go-hclog v1.2.1
+	github.com/hashicorp/go-hclog v1.0.0
 )
 
 require (
@@ -79,4 +80,4 @@ require (
 	honnef.co/go/tools v0.3.0-0.dev.0.20220306074811-23e1086441d2 // indirect
 )
 
-//replace github.com/cloudquery/cq-provider-sdk v0.7.0-alpha.0.20220119154925-739f3acc9e08 => ../cq-provider-sdk
+// replace github.com/cloudquery/cq-provider-sdk => ../cq-provider-sdk
