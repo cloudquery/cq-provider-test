@@ -45,14 +45,14 @@ func (c Configuration) Example() string {
   }`
 	default:
 		return `
-account:
-  name: "1"
-  id: testid
-regions:
-  - asdas
-resources:
-  - ab
-  - c
+  account:
+    name: "1"
+    id: testid
+  regions:
+    - asdas
+  resources:
+    - ab
+    - c
 `
 	}
 }
