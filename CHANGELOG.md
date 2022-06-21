@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.10](https://github.com/cloudquery/cq-provider-test/compare/v0.1.9...v0.1.10) (2022-06-21)
+
+
+### Features
+
+* YAML config support ([#82](https://github.com/cloudquery/cq-provider-test/issues/82)) ([d9caffc](https://github.com/cloudquery/cq-provider-test/commit/d9caffc383de53e1cb057aa97df896f501e5c42f))
+
+
+### Bug Fixes
+
+* **deps:** Update module github.com/cloudquery/cq-provider-sdk to v0.12.1 ([#87](https://github.com/cloudquery/cq-provider-test/issues/87)) ([369a2cd](https://github.com/cloudquery/cq-provider-test/commit/369a2cde4f5cc745b45faeacbddc4c44fc529ebd))
+
 ## [0.1.9](https://github.com/cloudquery/cq-provider-test/compare/v0.1.8...v0.1.9) (2022-06-20)
 
 
