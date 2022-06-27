@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.14](https://github.com/cloudquery/cq-provider-test/compare/v0.1.13...v0.1.14) (2022-06-27)
+
+
+### Bug Fixes
+
+* **deps:** fix(deps): Update module github.com/cloudquery/cq-provider-sdk to v0.12.5 ([#99](https://github.com/cloudquery/cq-provider-test/issues/99)) ([73fc6c3](https://github.com/cloudquery/cq-provider-test/commit/73fc6c3639d9e9364ca61b46f7f4ea7fc748b760))
+
 ## [0.1.13](https://github.com/cloudquery/cq-provider-test/compare/v0.1.12...v0.1.13) (2022-06-27)
 
 
