@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cloudquery/cq-provider-sdk/cqproto"
 	"github.com/cloudquery/cq-provider-sdk/provider"
 	"github.com/cloudquery/cq-provider-sdk/provider/diag"
 	"github.com/cloudquery/cq-provider-sdk/provider/schema"
@@ -80,8 +79,8 @@ func Provider() *provider.Provider {
 				},
 			},
 		},
-		Config: func(f cqproto.ConfigFormat) provider.Config {
-			return client.NewConfiguration(f)
+		Config: func() provider.Config {
+			return &client.Configuration{}
 		},
 		Logger: hclog.NewNullLogger(),
 	}

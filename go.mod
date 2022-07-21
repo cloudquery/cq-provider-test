@@ -3,7 +3,7 @@ module github.com/cloudquery/cq-provider-test
 go 1.17
 
 require (
-	github.com/cloudquery/cq-provider-sdk v0.13.5
+	github.com/cloudquery/cq-provider-sdk v0.14.1
 	github.com/hashicorp/go-hclog v1.2.1
 )
 
@@ -19,7 +19,6 @@ require (
 	github.com/georgysavva/scany v1.0.0 // indirect
 	github.com/gofrs/uuid v4.2.0+incompatible // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/google/go-cmp v0.5.8 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-plugin v1.4.4 // indirect
@@ -66,7 +65,7 @@ require (
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.11 // indirect
 	google.golang.org/genproto v0.0.0-20220314164441-57ef72a4c106 // indirect
-	google.golang.org/grpc v1.47.0 // indirect
+	google.golang.org/grpc v1.48.0 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
