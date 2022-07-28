@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.20](https://github.com/cloudquery/cq-provider-test/compare/v0.1.19...v0.1.20) (2022-07-28)
+
+
+### Bug Fixes
+
+* **deps:** Update myrotvorets/set-commit-status-action digest to 9d8a3c7 ([#112](https://github.com/cloudquery/cq-provider-test/issues/112)) ([1cd5b56](https://github.com/cloudquery/cq-provider-test/commit/1cd5b56a19043207b05e9b4e472e53f4a195a4d8))
+
 ## [0.1.19](https://github.com/cloudquery/cq-provider-test/compare/v0.1.18...v0.1.19) (2022-07-27)
 
 
