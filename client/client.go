@@ -1,14 +1,11 @@
 package client
 
 import (
-	"github.com/cloudquery/cq-provider-sdk/cqproto"
 	"github.com/hashicorp/go-hclog"
 )
 
 type Configuration struct {
 	Accounts []Account `hcl:"account,block" yaml:"account"`
-
-	requestedFormat cqproto.ConfigFormat
 }
 
 type Account struct {
@@ -26,34 +23,12 @@ func (t TestClient) Logger() hclog.Logger {
 	return t.L
 }
 
-func NewConfiguration(f cqproto.ConfigFormat) *Configuration {
-	return &Configuration{
-		requestedFormat: f,
-	}
-}
-
-func (c Configuration) Example() string {
-	switch c.requestedFormat {
-	case cqproto.ConfigHCL:
-		return `
-  configuration {
-    account "1" {
-      id = "testid"
-      regions = ["asdas"]
-      resources = ["ab", "c"]
-    }
-  }`
-	default:
-		return `
+func (Configuration) Example() string {
+	return `
 #account:
 #  name: "1"
 #  id: testid
 #  regions:
 #    - asdas
 `
-	}
-}
-
-func (c Configuration) Format() cqproto.ConfigFormat {
-	return c.requestedFormat
 }
