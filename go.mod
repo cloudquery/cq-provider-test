@@ -1,6 +1,6 @@
 module github.com/cloudquery/cq-provider-test
 
-go 1.18
+go 1.19
 
 require (
 	github.com/cloudquery/cq-provider-sdk v0.14.6
