@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.21](https://github.com/cloudquery/cq-provider-test/compare/v0.1.20...v0.1.21) (2022-08-02)
+
+
+### Bug Fixes
+
+* **deps:** Update module github.com/cloudquery/cq-provider-sdk to v0.14.6 ([#121](https://github.com/cloudquery/cq-provider-test/issues/121)) ([876fdb1](https://github.com/cloudquery/cq-provider-test/commit/876fdb12284634cf29125af9a2057239e4ff0de0))
+* **deps:** Update module github.com/hashicorp/go-hclog to v1.2.2 ([#129](https://github.com/cloudquery/cq-provider-test/issues/129)) ([a01b84c](https://github.com/cloudquery/cq-provider-test/commit/a01b84c1b03a5f6b8792d367a00a36ef92e17b0f))
+
 ## [0.1.20](https://github.com/cloudquery/cq-provider-test/compare/v0.1.19...v0.1.20) (2022-07-28)
 
 
